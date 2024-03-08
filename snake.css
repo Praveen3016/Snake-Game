@@ -1,0 +1,89 @@
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container
+{
+    height: 500px;
+    width: 500px;
+}
+.game{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(13, 13, 53);
+    display: grid;
+    grid-template: repeat(30,1fr) / repeat(30 , 1fr);
+}
+.food{
+    background-color: rgb(226, 43, 43);
+}
+.snake{
+    background-color:blueviolet ;
+} */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   background: url(snake-sand-desert_188544-25535.jpg) ;
+   background-repeat: no-repeat;
+   background-size: cover;
+   overflow: hidden;
+
+}
+
+.container
+{
+    height: 500px;
+    width:450px;
+    box-shadow: 0px 0px 20px 4px rgb(0, 0, 0);
+}
+.gamer{
+    height: 450px;
+    width: 450px;
+    background-color: rgba(138, 138, 138, 0.329);
+    display: grid;
+    grid-template: repeat(30,1fr) / repeat(30 , 1fr);
+}
+.food{
+    background-color: rgb(255, 32, 32);
+    border-radius: 50%;
+    animation: scale 1s ease-in-out infinite;
+}
+.snake{
+    background-color:rgb(3, 3, 3) ;
+    border-radius: 5px;
+}
+.info{
+    height: 50px;
+    background-color: rgb(0, 37, 46) ;
+    display: flex;
+    padding-inline: 10px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    /* border: 1px solid rgb(78, 78, 78); */
+}
+.none{
+    display: none;
+}
+@keyframes scale {
+  0% {
+   /* box-shadow: 0px 0px 8px red; */
+ background-color: rgb(255, 0, 0);
+  }
+  50% {
+    
+    background-color: rgb(66, 28, 46);
+  }
+  100%{
+    transform: scale(1);
+    background-color: rgb(115, 255, 0);
+  }
+}
+.info p span{
+    font-size: 15px;
+    font-weight: 700;
+}
